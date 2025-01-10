@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactive-code-walkthrough/static/css/main.440e242d.css",
+    "main.js": "/interactive-code-walkthrough/static/js/main.37f9b6f6.js",
+    "index.html": "/interactive-code-walkthrough/index.html",
+    "main.440e242d.css.map": "/interactive-code-walkthrough/static/css/main.440e242d.css.map",
+    "main.37f9b6f6.js.map": "/interactive-code-walkthrough/static/js/main.37f9b6f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.440e242d.css",
+    "static/js/main.37f9b6f6.js"
+  ]
+}
