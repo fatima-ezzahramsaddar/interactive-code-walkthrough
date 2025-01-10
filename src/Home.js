@@ -25,6 +25,7 @@ const Home = () => {
         <h2>Interactive Code Walkthrough</h2>
         <div id="code-blocks">
           <div className="code-block">
+            <pre><code className="language-javascript">// Code section 0: Initial setup</code></pre>
             <pre><code className="language-javascript">// Code section 1: Functionality implementation</code></pre>
             <p className="annotation">This code implements the core functionality for feature X...</p>
           </div>
