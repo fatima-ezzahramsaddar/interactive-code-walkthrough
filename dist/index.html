@@ -1,1 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Interactive Code Walkthrough</title><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script src="bundle.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interactive Code Walkthrough</title>
+
+  <!-- Use the %PUBLIC_URL% placeholder to handle relative paths for assets in production -->
+  <script defer="defer" src="%PUBLIC_URL%/bundle.js"></script>
+</head>
+<body>
+  <!-- This is where React will render your components -->
+  <div id="root"></div>
+
+  <!-- Load bundle.js from the correct path -->
+  <script src="%PUBLIC_URL%/bundle.js"></script>
+</body>
+</html>
