@@ -1,11 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development', // Add this line for development mode
+  mode: 'production', // Add this line for development mode
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/interactive-code-walkthrough/',
   },
   module: {
     rules: [
@@ -25,14 +26,5 @@ module.exports = {
     alias: {
       'react-syntax-highlighter': path.resolve(__dirname, 'node_modules/react-syntax-highlighter/dist/cjs'),
     },
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
-    hot: true,
-    port: 3000,
-    open: true, // Automatically open the browser
-    compress: true, // Enable gzip compression for better performance
-  },
+  }
 };
