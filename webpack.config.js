@@ -1,12 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production', // Add this line for development mode
+  mode: 'production', // Make sure it's in production mode for optimized output
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/interactive-code-walkthrough/',
+    filename: 'bundle.js',  // Output file name
+    path: path.resolve(__dirname, 'build/static/js'),  // Make sure this is set correctly
   },
   module: {
     rules: [
@@ -21,10 +20,4 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: ['.js', '.jsx', '.json'],
-    alias: {
-      'react-syntax-highlighter': path.resolve(__dirname, 'node_modules/react-syntax-highlighter/dist/cjs'),
-    },
-  }
 };
